@@ -34,5 +34,11 @@ namespace ClassesTests
             var result = subject.ToString();
             Assert.AreEqual("ClassesApp.Person Name: Cathy French Age: 22. Address: 4 High Street, Stafford", result);
         }
+
+        [Test]
+        public void GetAddressTest
+        {
+
+        }
     }
 }

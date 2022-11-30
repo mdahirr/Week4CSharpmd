@@ -19,5 +19,9 @@ namespace ClassesApp
         public string Street { get; set; }
         public string Town { get; set; }
 
+        public string GetAddress()
+        {
+            return $"{HouseNo} {Street}, {Town}";
+        }
     }
 }

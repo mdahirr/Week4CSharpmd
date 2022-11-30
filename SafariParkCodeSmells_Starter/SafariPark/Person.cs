@@ -37,14 +37,14 @@ namespace ClassesApp
             return $"Walking along {times} times";
         }
 
-        private string GetAddress()
-        {
-            return $"Address: {_address.HouseNo} {_address.Street}, {_address.Town}";
-        }
+        //private string GetAddress()
+        //{
+        //    return $"Address: {_address.HouseNo} {_address.Street}, {_address.Town}";
+        //}
 
         public override string ToString()
         {
-            var addressString = GetAddress();
+            var addressString = _address.GetAddress();
             return $"{base.ToString()} Name: {GetFullName()} Age: {Age}. {addressString}";
         }
 
